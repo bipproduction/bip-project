@@ -1,0 +1,16 @@
+{
+  "name": "bip-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "bip-project": "./bin/bip-project.js"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21",
+    "readline": "^1.3.0",
+    "yargs": "^17.7.2"
+  }
+}
