@@ -1,7 +1,6 @@
 const fs = require('fs')
 const _ = require('lodash')
 const dotenv = require('dotenv')
-const config = dotenv.parse(fs.readFileSync('.env.local', 'utf8'))
 
 const envPath = '.env.local';
 // Check if .env.local file exists
@@ -10,6 +9,8 @@ if (!fs.existsSync(envPath)) {
     fs.writeFileSync(envPath, '');
     console.log('.env.local file created successfully.');
 }
+
+const config = dotenv.parse(fs.readFileSync('.env.local', 'utf8'))
 
 function set(key, value) {
     config[key] = value
